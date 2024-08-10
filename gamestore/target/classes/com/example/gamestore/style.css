@@ -1,0 +1,91 @@
+/* General Application Styles */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #00c6ff, #0072ff); /* Bright gradient from cyan to blue */
+}
+
+.border-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the BorderPane */
+    -fx-background-radius: 15px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, #000000, 15, 0, 0, 10); /* Drop shadow effect */
+}
+
+.vbox {
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background for the VBox */
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, #000000, 10, 0, 0, 5); /* Drop shadow effect */
+}
+
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #0072ff; /* Match with the gradient color */
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #00c6ff; /* Bright cyan color */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-border-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, #0072ff, 5, 0, 0, 3); /* Drop shadow effect for the button */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #0072ff; /* Darker blue on hover */
+}
+
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #00c6ff; /* Border color matching the button */
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, #000000, 5, 0, 0, 2); /* Drop shadow effect for the list view */
+}
+
+.list-cell {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d4e1f1; /* Light blue border */
+    -fx-border-width: 0 0 1px 0;
+    -fx-padding: 10px;
+}
+
+.list-cell:hover {
+    -fx-background-color: linear-gradient(to right, #00c6ff, #0072ff); /* Gradient hover effect */
+    -fx-text-fill: #ffffff; /* White text color on hover */
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333; /* Dark text color for better readability */
+}
+
+.image-view {
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, #000000, 10, 0, 0, 5); /* Drop shadow effect for the image view */
+}
+
+/* Game Detail View Styles */
+#descriptionLabel {
+    -fx-text-fill: #555555; /* Lighter color for description text */
+    -fx-font-size: 14px;
+}
+
+/* Back Button Style */
+#backButton {
+    -fx-background-color: #00c6ff; /* Bright cyan color */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-border-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, #0072ff, 5, 0, 0, 3); /* Drop shadow effect for the button */
+}
+
+#backButton:hover {
+    -fx-background-color: #0072ff; /* Darker blue on hover */
+}

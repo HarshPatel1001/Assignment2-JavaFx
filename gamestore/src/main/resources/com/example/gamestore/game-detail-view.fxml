@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Root layout container for the game detail view -->
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gamestore.GameDetailController" spacing="10" alignment="CENTER">
+
+    <!-- Padding around the VBox to provide space inside the container -->
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Button to go back to the home page -->
+    <Button fx:id="backButton" text="Back to Home" onAction="#handleBackButton" styleClass="button"/>
+
+    <!-- Label to display the name of the game -->
+    <Label fx:id="nameLabel" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <!-- Label to display the release date of the game -->
+    <Label fx:id="releaseDateLabel"/>
+
+    <!-- Label to display the description of the game -->
+    <Label fx:id="descriptionLabel" id="descriptionLabel"/> <!-- Ensure this id is in your CSS for styling -->
+
+    <!-- ImageView to display the background image of the game -->
+    <ImageView fx:id="backgroundImageView" fitHeight="300" fitWidth="400" preserveRatio="true" styleClass="image-view"/>
+</VBox>

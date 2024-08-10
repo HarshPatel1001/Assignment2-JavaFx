@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gamestore.MainController" stylesheets="@style.css">
+    <center>
+        <VBox fx:id="vbox" spacing="15.0" alignment="CENTER" BorderPane.alignment="CENTER" styleClass="vbox">
+            <TextField fx:id="searchField" promptText="Enter game title..." styleClass="text-field"/>
+            <Button fx:id="searchButton" text="Search" styleClass="button"/>
+            <ListView fx:id="gameListView" styleClass="list-view"/>
+            <Button fx:id="backButton" text="Back to Home" onAction="#goBackToHome" styleClass="button" visible="false"/> <!-- Add Back Button -->
+        </VBox>
+    </center>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+</BorderPane>

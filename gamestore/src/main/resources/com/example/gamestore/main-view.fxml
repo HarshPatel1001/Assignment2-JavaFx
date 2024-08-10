@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Root layout container for the main view -->
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gamestore.MainController" stylesheets="@style.css">
+
+    <!-- Center area of the BorderPane for main content -->
+    <center>
+        <VBox fx:id="vbox" spacing="15.0" alignment="CENTER" BorderPane.alignment="CENTER" styleClass="vbox">
+
+            <!-- TextField for entering the search query -->
+            <TextField fx:id="searchField" promptText="Enter game title..." styleClass="text-field"/>
+
+            <!-- Button to initiate the search -->
+            <Button fx:id="searchButton" text="Search" styleClass="button"/>
+
+            <!-- ListView to display the list of games -->
+            <ListView fx:id="gameListView" styleClass="list-view"/>
+
+            <!-- Button to go back to the home page, initially hidden -->
+            <Button fx:id="backButton" text="Back to Home" onAction="#goBackToHome" styleClass="button" visible="false"/> <!-- Add Back Button -->
+        </VBox>
+    </center>
+
+    <!-- Padding around the BorderPane to provide space inside the container -->
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+</BorderPane>
